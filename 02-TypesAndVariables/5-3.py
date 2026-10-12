@@ -7,6 +7,8 @@ a = int(input('a= '))
 b = int(input("b= "))
 c = int(input("c= "))
 
-volume = 2*(a*c + a*b + b*c)
-surface = 
-print(volume)
+surface_area = 2*(a*c + a*b + b*c)
+volume = a*b*c
+
+print(f"Surface_area: {surface_area}")
+print(f"Volume: {volume}")
