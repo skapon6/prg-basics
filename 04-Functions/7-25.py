@@ -1,13 +1,9 @@
-def f(x,y):
-    candidate = set()
+def f(x, y):
     result = 0
-    for i in range(x,y+1):
-        for j in range(x,y+1):
-            candidate.add(i+j)
-    for digit in candidate:
-        if digit % 2 == 0 and digit % 3 == 0 and digit % 4 != 0:
-            result = digit
+    for i in range(x, y + 1):
+        if i % 2 == 0 and i % 3 == 0 and i % 4 != 0:
+            result += i
     return result
-    
-print(f(10,30))
-    
+
+print(f(1, 20))
+print(f(10, 30))

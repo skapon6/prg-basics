@@ -1,11 +1,8 @@
-###
-# Calculates the sum of the digits in a number
-#
 def sum_digits(number):
     result = 0
     number = str(abs(number))
     for n in number:
-        result+= int(n)
+        result += int(n)
     return result
 
 any_number = int(input('Enter integer number: '))

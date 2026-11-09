@@ -1,17 +1,16 @@
 def f(dice):
-    result, _max = dice[0], 0
-    for i in range(0,len(dice)):
+    result = dice[0]
+    max_count = 0
+    for i in range(len(dice)):
         c = 1
-        for j in range(i+1,len(dice)):
+        for j in range(i + 1, len(dice)):
             if dice[i] != dice[j]:
-                # print(f"{dice[i]} !== {dice[j]}")
                 break
-            # print(f"{i}:{dice[i]} == {j}:{dice[j]}")
-            c+=1
-        if c > _max:
-            _max = c
+            c += 1
+        if c > max_count:
+            max_count = c
             result = dice[i]
-    return result
+    return int(result)
 
-
-            
+print(f("5233165554211"))
+print(f("2133"))

@@ -1,17 +1,13 @@
-###
-# Calculates the final grade for a test based
-# on the number of points obtained
-#
 def pts_to_grade(points):
     grade = ''
     if points >= 18:
         grade = 'Excellent'
     elif points >= 14:
-        grade = "Good"
+        grade = 'Good'
     elif points >= 10:
-        grade = "Satisfactory"
+        grade = 'Satisfactory'
     else:
-        grade = " Fail"
+        grade = 'Fail'
     return grade
 
 test_result = 15
